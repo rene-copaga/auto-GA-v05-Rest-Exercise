@@ -30,6 +30,7 @@ public class PostmanEcho implements IEndPoint {
         requestSpecification = new RequestSpecBuilder()
                 .setBaseUri(PropertyAccessor.getInstance().getBaseUri())
                 .addHeader("my-sample-header",  "Lorem ipsum dolor sit amet")
+                .setBody("diplomado testing")
                 .build();
     }
 
